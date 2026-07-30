@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Will You Be Mine? 💕
 
-## Getting Started
+A romantic, animated Next.js website to ask that special someone to be your girlfriend.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✨ Starry night aurora background with floating hearts
+- 💌 Interactive envelope opening scene
+- 📝 Typewriter love letter
+- 💖 The big question with a playful runaway "No" button
+- 🎉 Confetti celebration when she says yes
+
+## Personalize
+
+Edit `src/config/love.ts` to add her name, your name, and your custom messages:
+
+```ts
+export const loveConfig = {
+  herName: "Sarah",
+  yourName: "Daniel",
+  openingLine: "I made something just for you…",
+  letterLines: [ /* your romantic lines */ ],
+  question: "Will you be my girlfriend?",
+  celebrationTitle: "She said yes!",
+  celebrationMessage: "Your custom message here…",
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Deploy to [Vercel](https://vercel.com) for free — push to GitHub and import the project, or run:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npx vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Good luck! 🍀💕
